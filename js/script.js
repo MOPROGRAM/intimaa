@@ -46,6 +46,21 @@ document.addEventListener('DOMContentLoaded', () => {
   const savedLang = localStorage.getItem('preferred-lang') || 'en';
   setLanguage(savedLang);
 
+  // Scroll Reveal Animation
+  const revealElements = document.querySelectorAll('.reveal');
+  const revealOnScroll = () => {
+    revealElements.forEach(el => {
+      const rect = el.getBoundingClientRect();
+      const isVisible = rect.top < window.innerHeight - 100;
+      if (isVisible) {
+        el.classList.add('in-view');
+      }
+    });
+  };
+
+  window.addEventListener('scroll', revealOnScroll);
+  revealOnScroll(); // Initial check
+
   // Smooth Scroll
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
