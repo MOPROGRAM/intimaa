@@ -40,4 +40,20 @@ document.addEventListener('DOMContentLoaded', ()=>{
       window.location.href = `mailto:info@example.com?subject=${subject}&body=${body}`;
     });
   }
+
+  // Sticky header shadow on scroll
+  const header = document.querySelector('header.site-header');
+  const onScroll = ()=>{
+    if(window.scrollY > 12) header.classList.add('scrolled'); else header.classList.remove('scrolled');
+  };
+  onScroll();
+  window.addEventListener('scroll', onScroll);
+
+  // Simple reveal on scroll using IntersectionObserver
+  const observer = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting) e.target.classList.add('in-view');
+    });
+  },{threshold:0.12});
+  document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
 });

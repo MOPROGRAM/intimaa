@@ -10,8 +10,9 @@
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <div class="brand-row">
-        <div class="logo-wrap">
+      <nav class="main-nav">
+        <div class="brand-row">
+          <div class="logo-wrap">
           <img src="assets/logo.png" alt="Al-Intimaa logo" class="logo-img" onerror="this.style.display='none'; document.getElementById('svg-logo').style.display='block'">
 
           <!-- Inline SVG fallback styled to match provided logo colors (red & green) -->
@@ -37,12 +38,20 @@
         </div>
       </div>
 
-      <nav class="controls">
-        <div class="lang-switch">
-          <button id="btn-en" class="lang-btn" aria-pressed="true">EN</button>
-          <button id="btn-ar" class="lang-btn">العربية</button>
+      </div>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="controls">
+          <div class="lang-switch">
+            <button id="btn-en" class="lang-btn" aria-pressed="true">EN</button>
+            <button id="btn-ar" class="lang-btn">العربية</button>
+          </div>
+          <a class="btn contact-cta" href="#contact">Contact</a>
         </div>
-        <a class="btn contact-cta" href="#contact">Contact</a>
       </nav>
     </div>
   </header>
@@ -108,6 +117,44 @@
           <p class="en lang" data-lang="en">Contracts for planned maintenance & urgent repairs.</p>
           <p class="ar lang" data-lang="ar" dir="rtl">عقود صيانة دورية وإصلاحات عاجلة.</p>
         </article>
+      </div>
+    </section>
+
+    <section id="about" class="about container">
+      <h3 class="section-title en lang" data-lang="en">About Us</h3>
+      <h3 class="section-title ar lang" data-lang="ar" dir="rtl">من نحن</h3>
+      <div class="about-row">
+        <div class="about-text">
+          <p class="en lang" data-lang="en">Al-Intimaa Safety provides certified fire protection and safety services tailored to residential and commercial clients. Our team is trained, insured and committed to rapid response and preventive safety.</p>
+          <p class="ar lang" data-lang="ar" dir="rtl">شركة الانتماء للسلامة تقدّم خدمات معتمدة في حماية الحريق والسلامة للمباني السكنية والتجارية. فريقنا مدرب ومؤمّن ويعمل بسرعة ومهنية.</p>
+        </div>
+        <div class="about-image">
+          <!-- Decorative card -->
+          <div class="feature-card">
+            <h4 class="en lang" data-lang="en">Certified Technicians</h4>
+            <h4 class="ar lang" data-lang="ar">فنيون معتمدون</h4>
+            <p class="en lang" data-lang="en">Compliant with international safety standards.</p>
+            <p class="ar lang" data-lang="ar">مطابق لمعايير السلامة العالمية.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="testimonials container">
+      <h3 class="section-title en lang" data-lang="en">What clients say</h3>
+      <h3 class="section-title ar lang" data-lang="ar" dir="rtl">آراء العملاء</h3>
+      <div class="test-grid">
+        <blockquote class="testimonial card">
+          <p class="en lang" data-lang="en">"Fast, professional and reliable. They installed our building's fire system with great care."</p>
+          <p class="ar lang" data-lang="ar" dir="rtl">"سريعون ومحترفون وموثوقون. قاموا بتركيب نظام الحريق بمبنانا بعناية."</p>
+          <cite>— Ahmed, Facilities Manager</cite>
+        </blockquote>
+
+        <blockquote class="testimonial card">
+          <p class="en lang" data-lang="en">"Excellent maintenance service. Our extinguishers are always ready."</p>
+          <p class="ar lang" data-lang="ar" dir="rtl">"خدمة صيانة ممتازة. طفاياتنا دائماً جاهزة."</p>
+          <cite>— Sara, Property Owner</cite>
+        </blockquote>
       </div>
     </section>
 
