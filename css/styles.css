@@ -200,7 +200,7 @@ h1, h2, h3, h4 {
   color: var(--white);
   border: none;
   cursor: pointer;
-  overflow: hidden; /* For ripple effect */
+  overflow: hidden;
   position: relative;
   z-index: 1;
 }
@@ -212,18 +212,18 @@ h1, h2, h3, h4 {
   left: 50%;
   width: 5px;
   height: 5px;
-  background: rgba(255,255,255,0.3); /* Ripple color */
+  background: rgba(255,255,255,0.3);
   border-radius: 50%;
   opacity: 0;
   transform: scale(1) translate(-50%, -50%);
   transition: all 0.5s ease-out;
-  z-index: -1; /* Behind the button text */
+  z-index: -1;
 }
 
 .btn:active::after {
-  transform: scale(15) translate(-50%, -50%); /* Expand ripple */
+  transform: scale(15) translate(-50%, -50%);
   opacity: 1;
-  transition: all 0.3s ease-out; /* Faster on activation */
+  transition: all 0.3s ease-out;
 }
 
 .btn.ghost {
@@ -232,25 +232,39 @@ h1, h2, h3, h4 {
   border: 1px solid var(--primary);
 }
 
-/* Hero Section - Information Dense */
+/* Fire Extinguisher Animation */
+.fire-extinguisher-animation {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%); /* Center horizontally */
+  z-index: 500;
+  pointer-events: none;
+  width: 100px; /* Adjust size as needed */
+  height: auto;
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+
+#fire-extinguisher {
+  width: 100%;
+  height: auto;
+  display: block;
+  transform: translate(-50%, 150px); /* Initial position off-screen lower */
+}
+
+/* Hero Section - Information Dense with Background */
 .hero {
   padding: 2rem 0;
   background: var(--bg);
   border-bottom: 1px solid var(--border);
   position: relative;
   overflow: hidden;
+  background: linear-gradient(rgba(247,248,250,0.8), rgba(247,248,250,0.8)), url('https://images.unsplash.com/photo-1517036923838-b788a1834927?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
 }
 
-.hero::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url('https://images.unsplash.com/photo-1517036923838-b788a1834927?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover; /* Placeholder industrial image */
-  opacity: 0.05;
-  z-index: 0;
+[data-theme="dark"] .hero {
+  background: linear-gradient(rgba(28,28,28,0.8), rgba(28,28,28,0.8)), url('https://images.unsplash.com/photo-1517036923838-b788a1834927?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
 }
 
 .hero-card {
@@ -260,7 +274,7 @@ h1, h2, h3, h4 {
   align-items: center;
   position: relative;
   z-index: 1;
-  background: rgba(255,255,255,0.7); /* Semi-transparent overlay */
+  background: rgba(255,255,255,0.7);
   padding: 1.5rem;
   border-radius: var(--radius-sm);
   border: 1px solid var(--border);

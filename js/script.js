@@ -82,13 +82,28 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Parallax Effect for Hero Background (optional, if you want a JS-based parallax)
-  // window.addEventListener('scroll', () => {
-  //   const hero = document.querySelector('.hero');
-  //   if (hero) {
-  //     const scrollPosition = window.scrollY;
-  //     hero.style.backgroundPositionY = -scrollPosition * 0.2 + 'px'; // Adjust speed
-  //   }
-  // });
+  // Fire Extinguisher Animation on Scroll
+  const fireExtinguisher = document.getElementById('fire-extinguisher');
+  if (fireExtinguisher) {
+    window.addEventListener('scroll', () => {
+      const scrollPosition = window.scrollY;
+      const windowHeight = window.innerHeight;
+      const bodyHeight = document.body.offsetHeight;
+      
+      // Calculate position relative to scroll
+      // Starts at 0% visible (bottom) and moves up to 100% visible (top) relative to scroll
+      const maxScroll = bodyHeight - windowHeight; // Max scrollable height
+      const scrollProgress = Math.min(1, scrollPosition / maxScroll); // 0 to 1
+
+      // Adjust these values to control animation path and speed
+      const startY = 150; // Initial vertical position (px from top, adjust as needed)
+      const endY = 50;   // Final vertical position (px from top, adjust as needed)
+      const translateX = -50 + (scrollProgress * 100); // Moves from -50% to 50% horizontally
+      const translateY = startY - (scrollProgress * (startY - endY));
+
+      fireExtinguisher.style.transform = `translate(-50%, ${translateY}px) translateX(${translateX}%)`;
+      fireExtinguisher.style.opacity = Math.min(1, scrollProgress * 2); // Fade in
+    });
+  }
 
 });
