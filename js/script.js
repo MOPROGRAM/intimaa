@@ -26,4 +26,18 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
   btnEn.addEventListener('click', ()=> setLang('en'));
   btnAr.addEventListener('click', ()=> setLang('ar'));
+  
+  // Contact form: open user's email client with composed message
+  const form = document.getElementById('contactForm');
+  if(form){
+    form.addEventListener('submit', (e)=>{
+      e.preventDefault();
+      const name = document.getElementById('contact-name').value.trim();
+      const info = document.getElementById('contact-info').value.trim();
+      const message = document.getElementById('contact-message').value.trim();
+      const subject = encodeURIComponent('Website inquiry from ' + (name || info || 'Website'));
+      const body = encodeURIComponent((name?('Name: '+name+'\n'):'') + (info?('Contact: '+info+'\n\n'):'') + message);
+      window.location.href = `mailto:info@example.com?subject=${subject}&body=${body}`;
+    });
+  }
 });

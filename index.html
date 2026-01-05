@@ -10,56 +10,103 @@
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <div class="brand">
-        <h1 class="logo">شركة الانتماء للسلامة</h1>
-        <p class="tagline en">Safety systems: alarms, fire extinguishers & more</p>
-        <p class="tagline ar">أنظمة السلامة: إنذار، طفايات الحريق والخدمات ذات الصلة</p>
+      <div class="brand-row">
+        <div class="logo-wrap">
+          <img src="assets/logo.png" alt="Al-Intimaa logo" class="logo-img" onerror="this.style.display='none'; document.getElementById('svg-logo').style.display='block'">
+
+          <!-- Inline SVG fallback styled to match provided logo colors (red & green) -->
+          <svg id="svg-logo" xmlns="http://www.w3.org/2000/svg" width="84" height="48" viewBox="0 0 84 48" style="display:none">
+            <defs>
+              <linearGradient id="ribbon" x1="0" x2="1">
+                <stop offset="0" stop-color="#e53935"/>
+                <stop offset="1" stop-color="#43a047"/>
+              </linearGradient>
+            </defs>
+            <g font-family="Roboto, Noto Naskh Arabic, sans-serif" font-weight="700">
+              <text x="2" y="32" font-size="34" fill="#e53935">E</text>
+              <text x="36" y="32" font-size="34" fill="#43a047">S</text>
+            </g>
+            <path d="M68 10c6 8 10 6 14 0" stroke="url(#ribbon)" stroke-width="6" stroke-linecap="round" fill="none" opacity="0.95"/>
+          </svg>
+        </div>
+
+        <div class="brand-text">
+          <h1 class="logo">شركة الانتماء للسلامة</h1>
+          <p class="tagline en">Professional fire & safety solutions — alarms, extinguishers, inspections</p>
+          <p class="tagline ar">حلول احترافية للسلامة والحريق — إنذار، طفايات، فحص وصيانة</p>
+        </div>
       </div>
-      <nav class="lang-switch">
-        <button id="btn-en" class="lang-btn" aria-pressed="true">EN</button>
-        <button id="btn-ar" class="lang-btn">العربية</button>
+
+      <nav class="controls">
+        <div class="lang-switch">
+          <button id="btn-en" class="lang-btn" aria-pressed="true">EN</button>
+          <button id="btn-ar" class="lang-btn">العربية</button>
+        </div>
+        <a class="btn contact-cta" href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
   <main>
     <section class="hero container">
-      <div class="hero-content en lang" data-lang="en">
-        <h2>Professional Fire & Safety Solutions</h2>
-        <p>Installation, maintenance and consultation for alarms, extinguishers and emergency systems.</p>
-        <a href="#contact" class="btn">Get a Quote</a>
-      </div>
-      <div class="hero-content ar lang" data-lang="ar" dir="rtl">
-        <h2>حلول احترافية للسلامة والحريق</h2>
-        <p>تركيب وصيانة واستشارات لأنظمة الإنذار وطفايات الحريق وأنظمة الطوارئ.</p>
-        <a href="#contact" class="btn">اطلب عرض سعر</a>
+      <div class="hero-card">
+        <div class="hero-left">
+          <div class="hero-content en lang" data-lang="en">
+            <h2>Protecting People & Property</h2>
+            <p>We deliver professional installation, inspection and maintenance of fire alarms, extinguishers and emergency systems — fast, certified and reliable.</p>
+            <div class="hero-actions">
+              <a href="#contact" class="btn">Get a Quote</a>
+              <a href="#services" class="btn ghost">Our Services</a>
+            </div>
+          </div>
+
+          <div class="hero-content ar lang" data-lang="ar" dir="rtl">
+            <h2>حماية الأرواح والممتلكات</h2>
+            <p>نقدّم تركيباً، فحصاً وصيانة احترافية لأنظمة الإنذار وطفايات الحريق وأنظمة الطوارئ — بسرعة ومصداقية.</p>
+            <div class="hero-actions">
+              <a href="#contact" class="btn">اطلب عرض سعر</a>
+              <a href="#services" class="btn ghost">خدماتنا</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="stats">
+            <div><strong>+10</strong><span class="en lang" data-lang="en">Years</span><span class="ar lang" data-lang="ar">سنوات</span></div>
+            <div><strong>+500</strong><span class="en lang" data-lang="en">Installations</span><span class="ar lang" data-lang="ar">تركيب</span></div>
+            <div><strong>24/7</strong><span class="en lang" data-lang="en">Support</span><span class="ar lang" data-lang="ar">دعم</span></div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="services container">
+    <section id="services" class="services container">
       <h3 class="section-title en lang" data-lang="en">Our Services</h3>
       <h3 class="section-title ar lang" data-lang="ar" dir="rtl">خدماتنا</h3>
 
       <div class="grid">
         <article class="card">
+          <div class="icon">🔥</div>
           <h4 class="en lang" data-lang="en">Fire Extinguishers</h4>
           <h4 class="ar lang" data-lang="ar" dir="rtl">طفايات الحريق</h4>
-          <p class="en lang" data-lang="en">Supply, inspection and recharging of extinguishers.</p>
-          <p class="ar lang" data-lang="ar" dir="rtl">توريد وفحص وإعادة شحن الطفايات.</p>
+          <p class="en lang" data-lang="en">Supply, inspection and recharging with certification.</p>
+          <p class="ar lang" data-lang="ar" dir="rtl">توريد، فحص وإعادة شحن مع شهادة معتمدة.</p>
         </article>
 
         <article class="card">
+          <div class="icon">🔔</div>
           <h4 class="en lang" data-lang="en">Alarm Systems</h4>
           <h4 class="ar lang" data-lang="ar" dir="rtl">أنظمة الإنذار</h4>
-          <p class="en lang" data-lang="en">Design and installation of fire & security alarm systems.</p>
-          <p class="ar lang" data-lang="ar" dir="rtl">تصميم وتركيب أنظمة إنذار الحريق والأمن.</p>
+          <p class="en lang" data-lang="en">Design, installation and integration of fire & security alarms.</p>
+          <p class="ar lang" data-lang="ar" dir="rtl">تصميم وتركيب ودمج أنظمة إنذار الحريق والأمن.</p>
         </article>
 
         <article class="card">
-          <h4 class="en lang" data-lang="en">Maintenance & Inspection</h4>
-          <h4 class="ar lang" data-lang="ar" dir="rtl">الصيانة والفحص</h4>
-          <p class="en lang" data-lang="en">Regular maintenance contracts and safety inspections.</p>
-          <p class="ar lang" data-lang="ar" dir="rtl">عقود صيانة دورية وفحوصات السلامة.</p>
+          <div class="icon">🛠️</div>
+          <h4 class="en lang" data-lang="en">Maintenance</h4>
+          <h4 class="ar lang" data-lang="ar" dir="rtl">الصيانة</h4>
+          <p class="en lang" data-lang="en">Contracts for planned maintenance & urgent repairs.</p>
+          <p class="ar lang" data-lang="ar" dir="rtl">عقود صيانة دورية وإصلاحات عاجلة.</p>
         </article>
       </div>
     </section>
@@ -69,23 +116,29 @@
       <h3 class="ar lang" data-lang="ar" dir="rtl">تواصل معنا</h3>
 
       <div class="contact-grid">
-        <div>
+        <div class="contact-info">
           <p class="en lang" data-lang="en">Phone: <a href="tel:+123456789">+1 234 567 89</a></p>
           <p class="ar lang" data-lang="ar" dir="rtl">الهاتف: <a href="tel:+123456789">+1 234 567 89</a></p>
           <p class="en lang" data-lang="en">Email: <a href="mailto:info@example.com">info@example.com</a></p>
           <p class="ar lang" data-lang="ar" dir="rtl">البريد: <a href="mailto:info@example.com">info@example.com</a></p>
+          <p class="en lang" data-lang="en">Service area: Greater city and suburbs</p>
+          <p class="ar lang" data-lang="ar" dir="rtl">منطقة الخدمة: المدينة والمناطق المحيطة</p>
         </div>
 
-        <form class="contact-form" action="#" onsubmit="return false;">
+        <form id="contactForm" class="contact-form" action="#">
           <label class="en lang" data-lang="en">Name</label>
           <label class="ar lang" data-lang="ar">الاسم</label>
-          <input type="text" placeholder="" />
+          <input id="contact-name" type="text" placeholder="" required />
+
+          <label class="en lang" data-lang="en">Email or Phone</label>
+          <label class="ar lang" data-lang="ar">البريد أو الهاتف</label>
+          <input id="contact-info" type="text" placeholder="" required />
 
           <label class="en lang" data-lang="en">Message</label>
           <label class="ar lang" data-lang="ar">الرسالة</label>
-          <textarea rows="4"></textarea>
+          <textarea id="contact-message" rows="4" required></textarea>
 
-          <button class="btn">
+          <button type="submit" class="btn send">
             <span class="en lang" data-lang="en">Send</span>
             <span class="ar lang" data-lang="ar">إرسال</span>
           </button>
