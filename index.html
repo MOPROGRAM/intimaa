@@ -3,54 +3,55 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Al-Intimaa Safety - Safety & Fire Solutions</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Noto+Naskh+Arabic:wght@400;700&display=swap" rel="stylesheet">
+  <title>Al-Intimaa Safety | Professional Fire & Safety Solutions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Noto+Naskh+Arabic:wght@400;700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="lang-en">
   <header class="site-header">
     <div class="container header-inner">
-      <nav class="main-nav">
-        <div class="brand-row">
-          <div class="logo-wrap">
+      <div class="brand-row">
+        <div class="logo-wrap">
           <img src="assets/logo.svg" alt="Al-Intimaa logo" class="logo-img" onerror="this.style.display='none'; document.getElementById('svg-logo').style.display='block'">
-
-          <!-- Inline SVG fallback styled to match provided logo colors (red & green) -->
           <svg id="svg-logo" xmlns="http://www.w3.org/2000/svg" width="84" height="48" viewBox="0 0 84 48" style="display:none">
             <defs>
               <linearGradient id="ribbon" x1="0" x2="1">
-                <stop offset="0" stop-color="#e53935"/>
-                <stop offset="1" stop-color="#43a047"/>
+                <stop offset="0" stop-color="#dc2626"/>
+                <stop offset="1" stop-color="#16a34a"/>
               </linearGradient>
             </defs>
-            <g font-family="Roboto, Noto Naskh Arabic, sans-serif" font-weight="700">
-              <text x="2" y="32" font-size="34" fill="#e53935">E</text>
-              <text x="36" y="32" font-size="34" fill="#43a047">S</text>
+            <g font-family="Inter, sans-serif" font-weight="800">
+              <text x="2" y="32" font-size="34" fill="#dc2626">E</text>
+              <text x="36" y="32" font-size="34" fill="#16a34a">S</text>
             </g>
-            <path d="M68 10c6 8 10 6 14 0" stroke="url(#ribbon)" stroke-width="6" stroke-linecap="round" fill="none" opacity="0.95"/>
           </svg>
         </div>
-
         <div class="brand-text">
-          <h1 class="logo">شركة الانتماء للسلامة</h1>
-          <p class="tagline en">Professional fire & safety solutions — alarms, extinguishers, inspections</p>
-          <p class="tagline ar">حلول احترافية للسلامة والحريق — إنذار، طفايات، فحص وصيانة</p>
+          <h1 class="logo en lang" data-lang="en">Al-Intimaa Safety</h1>
+          <h1 class="logo ar lang" data-lang="ar">شركة الانتماء للسلامة</h1>
+          <p class="tagline en lang" data-lang="en">Fire & Safety Excellence</p>
+          <p class="tagline ar lang" data-lang="ar">تميز في السلامة والحماية</p>
         </div>
       </div>
 
-      </div>
+      <nav class="main-nav">
         <ul class="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#"><span class="en lang" data-lang="en">Home</span><span class="ar lang" data-lang="ar">الرئيسية</span></a></li>
+          <li><a href="#services"><span class="en lang" data-lang="en">Services</span><span class="ar lang" data-lang="ar">الخدمات</span></a></li>
+          <li><a href="#about"><span class="en lang" data-lang="en">About</span><span class="ar lang" data-lang="ar">من نحن</span></a></li>
+          <li><a href="#contact"><span class="en lang" data-lang="en">Contact</span><span class="ar lang" data-lang="ar">اتصل بنا</span></a></li>
         </ul>
         <div class="controls">
           <div class="lang-switch">
             <button id="btn-en" class="lang-btn" aria-pressed="true">EN</button>
             <button id="btn-ar" class="lang-btn">العربية</button>
           </div>
-          <a class="btn contact-cta" href="#contact">Contact</a>
+          <a class="btn contact-cta" href="#contact">
+            <i class="fas fa-paper-plane"></i>
+            <span class="en lang" data-lang="en">Contact</span>
+            <span class="ar lang" data-lang="ar">تواصل معنا</span>
+          </a>
         </div>
       </nav>
     </div>
@@ -61,19 +62,19 @@
       <div class="hero-card">
         <div class="hero-left">
           <div class="hero-content en lang" data-lang="en">
-            <h2>Protecting People & Property</h2>
-            <p>We deliver professional installation, inspection and maintenance of fire alarms, extinguishers and emergency systems — fast, certified and reliable.</p>
+            <h2>Protecting People <span style="color:var(--primary)">&</span> Property</h2>
+            <p>We deliver professional installation, inspection, and maintenance of fire alarms, extinguishers, and emergency systems — fast, certified, and reliable.</p>
             <div class="hero-actions">
-              <a href="#contact" class="btn">Get a Quote</a>
+              <a href="#contact" class="btn">Get a Quote <i class="fas fa-arrow-right"></i></a>
               <a href="#services" class="btn ghost">Our Services</a>
             </div>
           </div>
 
           <div class="hero-content ar lang" data-lang="ar" dir="rtl">
-            <h2>حماية الأرواح والممتلكات</h2>
-            <p>نقدّم تركيباً، فحصاً وصيانة احترافية لأنظمة الإنذار وطفايات الحريق وأنظمة الطوارئ — بسرعة ومصداقية.</p>
+            <h2>حماية الأرواح <span style="color:var(--primary)">و</span> الممتلكات</h2>
+            <p>نقدّم تركيباً، فحصاً وصيانة احترافية لأنظمة الإنذار وطفايات الحريق وأنظمة الطوارئ — بسرعة، اعتماد، ومصداقية عالية.</p>
             <div class="hero-actions">
-              <a href="#contact" class="btn">اطلب عرض سعر</a>
+              <a href="#contact" class="btn">اطلب عرض سعر <i class="fas fa-arrow-left"></i></a>
               <a href="#services" class="btn ghost">خدماتنا</a>
             </div>
           </div>
@@ -81,123 +82,146 @@
 
         <div class="hero-right">
           <div class="stats">
-            <div><strong>+10</strong><span class="en lang" data-lang="en">Years</span><span class="ar lang" data-lang="ar">سنوات</span></div>
-            <div><strong>+500</strong><span class="en lang" data-lang="en">Installations</span><span class="ar lang" data-lang="ar">تركيب</span></div>
-            <div><strong>24/7</strong><span class="en lang" data-lang="en">Support</span><span class="ar lang" data-lang="ar">دعم</span></div>
+            <div class="reveal">
+              <strong>+10</strong>
+              <span class="en lang" data-lang="en">Years of Experience</span>
+              <span class="ar lang" data-lang="ar">سنوات من الخبرة</span>
+            </div>
+            <div class="reveal" style="transition-delay: 0.1s">
+              <strong>+500</strong>
+              <span class="en lang" data-lang="en">Completed Projects</span>
+              <span class="ar lang" data-lang="ar">مشروع مكتمل</span>
+            </div>
+            <div class="reveal" style="transition-delay: 0.2s">
+              <strong>24/7</strong>
+              <span class="en lang" data-lang="en">Emergency Support</span>
+              <span class="ar lang" data-lang="ar">دعم طوارئ</span>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <section id="services" class="services container">
-      <h3 class="section-title en lang" data-lang="en">Our Services</h3>
-      <h3 class="section-title ar lang" data-lang="ar" dir="rtl">خدماتنا</h3>
+      <h3 class="section-title en lang" data-lang="en">Our Premium Services</h3>
+      <h3 class="section-title ar lang" data-lang="ar" dir="rtl">خدماتنا المتميزة</h3>
 
       <div class="grid">
-        <article class="card">
-          <div class="icon">🔥</div>
+        <article class="card reveal">
+          <div class="icon"><i class="fas fa-fire-extinguisher"></i></div>
           <h4 class="en lang" data-lang="en">Fire Extinguishers</h4>
           <h4 class="ar lang" data-lang="ar" dir="rtl">طفايات الحريق</h4>
-          <p class="en lang" data-lang="en">Supply, inspection and recharging with certification.</p>
-          <p class="ar lang" data-lang="ar" dir="rtl">توريد، فحص وإعادة شحن مع شهادة معتمدة.</p>
+          <p class="en lang" data-lang="en">High-quality supply, meticulous inspection, and certified recharging services.</p>
+          <p class="ar lang" data-lang="ar" dir="rtl">توريد عالي الجودة، فحص دقيق، وخدمات إعادة شحن معتمدة وموثوقة.</p>
         </article>
 
-        <article class="card">
-          <div class="icon">🔔</div>
+        <article class="card reveal" style="transition-delay: 0.1s">
+          <div class="icon"><i class="fas fa-bell"></i></div>
           <h4 class="en lang" data-lang="en">Alarm Systems</h4>
           <h4 class="ar lang" data-lang="ar" dir="rtl">أنظمة الإنذار</h4>
-          <p class="en lang" data-lang="en">Design, installation and integration of fire & security alarms.</p>
-          <p class="ar lang" data-lang="ar" dir="rtl">تصميم وتركيب ودمج أنظمة إنذار الحريق والأمن.</p>
+          <p class="en lang" data-lang="en">Smart design, seamless installation, and integration of fire & security alerts.</p>
+          <p class="ar lang" data-lang="ar" dir="rtl">تصميم ذكي، تركيب سلس، ودمج أنظمة إنذار الحريق والأمن المتطورة.</p>
         </article>
 
-        <article class="card">
-          <div class="icon">🛠️</div>
-          <h4 class="en lang" data-lang="en">Maintenance</h4>
-          <h4 class="ar lang" data-lang="ar" dir="rtl">الصيانة</h4>
-          <p class="en lang" data-lang="en">Contracts for planned maintenance & urgent repairs.</p>
-          <p class="ar lang" data-lang="ar" dir="rtl">عقود صيانة دورية وإصلاحات عاجلة.</p>
+        <article class="card reveal" style="transition-delay: 0.2s">
+          <div class="icon"><i class="fas fa-tools"></i></div>
+          <h4 class="en lang" data-lang="en">Smart Maintenance</h4>
+          <h4 class="ar lang" data-lang="ar" dir="rtl">الصيانة الذكية</h4>
+          <p class="en lang" data-lang="en">Comprehensive contracts for planned maintenance and 24/7 urgent repairs.</p>
+          <p class="ar lang" data-lang="ar" dir="rtl">عقود شاملة للصيانة الوقائية وإصلاحات عاجلة على مدار الساعة.</p>
         </article>
       </div>
     </section>
 
     <section id="about" class="about container">
-      <h3 class="section-title en lang" data-lang="en">About Us</h3>
-      <h3 class="section-title ar lang" data-lang="ar" dir="rtl">من نحن</h3>
       <div class="about-row">
-        <div class="about-text">
-          <p class="en lang" data-lang="en">Al-Intimaa Safety provides certified fire protection and safety services tailored to residential and commercial clients. Our team is trained, insured and committed to rapid response and preventive safety.</p>
-          <p class="ar lang" data-lang="ar" dir="rtl">شركة الانتماء للسلامة تقدّم خدمات معتمدة في حماية الحريق والسلامة للمباني السكنية والتجارية. فريقنا مدرب ومؤمّن ويعمل بسرعة ومهنية.</p>
+        <div class="about-text reveal">
+          <h3 class="en lang" data-lang="en">Defining Safety Standards</h3>
+          <h3 class="ar lang" data-lang="ar" dir="rtl">نضع معايير السلامة</h3>
+          <p class="en lang" data-lang="en">Al-Intimaa Safety is a leader in certified fire protection. We specialize in tailored safety solutions for modern residential and commercial complexes across the region.</p>
+          <p class="ar lang" data-lang="ar" dir="rtl">تعد شركة الانتماء للسلامة رائدة في مجال الحماية المعتمدة من الحرائق. نحن متخصصون في حلول السلامة المصممة خصيصاً للمجمعات السكنية والتجارية الحديثة.</p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn">Learn More</a>
+          </div>
         </div>
-        <div class="about-image">
-          <!-- Decorative card -->
+        <div class="about-image reveal">
           <div class="feature-card">
-            <h4 class="en lang" data-lang="en">Certified Technicians</h4>
-            <h4 class="ar lang" data-lang="ar">فنيون معتمدون</h4>
-            <p class="en lang" data-lang="en">Compliant with international safety standards.</p>
-            <p class="ar lang" data-lang="ar">مطابق لمعايير السلامة العالمية.</p>
+            <i class="fas fa-award" style="font-size: 3rem; color: var(--secondary); margin-bottom: 1.5rem; display: block;"></i>
+            <h4 class="en lang" data-lang="en">Certified Excellence</h4>
+            <h4 class="ar lang" data-lang="ar">تميز معتمد</h4>
+            <p class="en lang" data-lang="en">Fully compliant with civil defense and international safety standards.</p>
+            <p class="ar lang" data-lang="ar">متوافق تماماً مع الدفاع المدني ومعايير السلامة العالمية.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="testimonials" class="testimonials container reveal">
-      <h3 class="section-title en lang" data-lang="en">What clients say</h3>
-      <h3 class="section-title ar lang" data-lang="ar" dir="rtl">آراء العملاء</h3>
+    <section id="testimonials" class="testimonials container">
+      <h3 class="section-title en lang" data-lang="en">Trusted by Leaders</h3>
+      <h3 class="section-title ar lang" data-lang="ar" dir="rtl">ثقة شركائنا</h3>
       <div class="test-grid">
-        <blockquote class="testimonial card">
-          <p class="en lang" data-lang="en">"Fast, professional and reliable. They installed our building's fire system with great care."</p>
-          <p class="ar lang" data-lang="ar" dir="rtl">"سريعون ومحترفون وموثوقون. قاموا بتركيب نظام الحريق بمبنانا بعناية."</p>
-          <cite>— Ahmed, Facilities Manager</cite>
+        <blockquote class="testimonial reveal">
+          <p class="en lang" data-lang="en">"The most professional safety team we've worked with. Their attention to detail in fire system installation is unmatched."</p>
+          <p class="ar lang" data-lang="ar" dir="rtl">"أكثر فريق سلامة احترافية تعاملنا معه. اهتمامهم بالتفاصيل في تركيب أنظمة الحريق لا يضاهى."</p>
+          <cite>— Ahmed Al-Saud, Facilities Director</cite>
         </blockquote>
 
-        <blockquote class="testimonial card">
-          <p class="en lang" data-lang="en">"Excellent maintenance service. Our extinguishers are always ready."</p>
-          <p class="ar lang" data-lang="ar" dir="rtl">"خدمة صيانة ممتازة. طفاياتنا دائماً جاهزة."</p>
-          <cite>— Sara, Property Owner</cite>
+        <blockquote class="testimonial reveal" style="transition-delay: 0.1s">
+          <p class="en lang" data-lang="en">"Reliable maintenance contracts that give us peace of mind. Highly recommend Al-Intimaa for any commercial project."</p>
+          <p class="ar lang" data-lang="ar" dir="rtl">"عقود صيانة موثوقة تمنحنا راحة البال. نوصي بشدة بشركة الانتماء لأي مشروع تجاري."</p>
+          <cite>— Sarah Johnson, Property Manager</cite>
         </blockquote>
       </div>
     </section>
 
-    <section class="cta-banner">
-      <div class="container cta-content reveal">
-        <h3 class="en lang" data-lang="en">Emergency Service Available 24/7</h3>
-        <h3 class="ar lang" data-lang="ar" dir="rtl">خدمة طوارئ متاحة 24/7</h3>
-        <p class="en lang" data-lang="en">Call us now for urgent fire safety issues</p>
-        <p class="ar lang" data-lang="ar" dir="rtl">اتصل بنا الآن في حالات الطوارئ</p>
-        <a href="tel:+123456789" class="btn">Call Now</a>
+    <section class="cta-banner reveal">
+      <div class="container cta-content">
+        <h3 class="en lang" data-lang="en">Ready to Secure Your Assets?</h3>
+        <h3 class="ar lang" data-lang="ar" dir="rtl">هل أنت مستعد لتأمين ممتلكاتك؟</h3>
+        <p class="en lang" data-lang="en">Our emergency response team is available 24 hours a day, 7 days a week.</p>
+        <p class="ar lang" data-lang="ar" dir="rtl">فريق استجابة الطوارئ لدينا متاح على مدار 24 ساعة، 7 أيام في الأسبوع.</p>
+        <a href="tel:+123456789" class="btn"><i class="fas fa-phone"></i> Call Emergency Support</a>
       </div>
     </section>
 
     <section id="contact" class="contact container">
-      <h3 class="en lang" data-lang="en">Contact Us</h3>
-      <h3 class="ar lang" data-lang="ar" dir="rtl">تواصل معنا</h3>
+      <h3 class="section-title en lang" data-lang="en">Get in Touch</h3>
+      <h3 class="section-title ar lang" data-lang="ar" dir="rtl">تواصل معنا</h3>
 
       <div class="contact-grid">
-        <div class="contact-info">
-          <p class="en lang" data-lang="en">Phone: <a href="tel:+123456789">+1 234 567 89</a></p>
-          <p class="ar lang" data-lang="ar" dir="rtl">الهاتف: <a href="tel:+123456789">+1 234 567 89</a></p>
-          <p class="en lang" data-lang="en">Email: <a href="mailto:info@example.com">info@example.com</a></p>
-          <p class="ar lang" data-lang="ar" dir="rtl">البريد: <a href="mailto:info@example.com">info@example.com</a></p>
-          <p class="en lang" data-lang="en">Service area: Greater city and suburbs</p>
-          <p class="ar lang" data-lang="ar" dir="rtl">منطقة الخدمة: المدينة والمناطق المحيطة</p>
+        <div class="contact-info reveal">
+          <h3>Contact Information</h3>
+          <p><i class="fas fa-phone"></i> <a href="tel:+123456789">+1 234 567 89</a></p>
+          <p><i class="fas fa-envelope"></i> <a href="mailto:info@intimaa-safety.com">info@intimaa-safety.com</a></p>
+          <p><i class="fas fa-map-marker-alt"></i> <span>Main Business District, Saudi Arabia</span></p>
+          <div class="social-links" style="margin-top: 2rem; display: flex; gap: 1rem;">
+            <a href="#"><i class="fab fa-linkedin" style="font-size: 1.5rem;"></i></a>
+            <a href="#"><i class="fab fa-twitter" style="font-size: 1.5rem;"></i></a>
+          </div>
         </div>
 
-        <form id="contactForm" class="contact-form" action="#">
-          <label class="en lang" data-lang="en">Name</label>
-          <label class="ar lang" data-lang="ar">الاسم</label>
-          <input id="contact-name" type="text" placeholder="" required />
-
-          <label class="en lang" data-lang="en">Email or Phone</label>
-          <label class="ar lang" data-lang="ar">البريد أو الهاتف</label>
-          <input id="contact-info" type="text" placeholder="" required />
+        <form id="contactForm" class="contact-form reveal">
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+            <div>
+              <label class="en lang" data-lang="en">Name</label>
+              <label class="ar lang" data-lang="ar">الاسم</label>
+              <input type="text" placeholder="John Doe" required />
+            </div>
+            <div>
+              <label class="en lang" data-lang="en">Email</label>
+              <label class="ar lang" data-lang="ar">البريد الإلكتروني</label>
+              <input type="email" placeholder="john@example.com" required />
+            </div>
+          </div>
 
           <label class="en lang" data-lang="en">Message</label>
           <label class="ar lang" data-lang="ar">الرسالة</label>
-          <textarea id="contact-message" rows="4" required></textarea>
+          <textarea rows="4" placeholder="How can we help you?" required></textarea>
 
-          <button type="submit" class="btn send">
-            <span class="en lang" data-lang="en">Send</span>
-            <span class="ar lang" data-lang="ar">إرسال</span>
+          <button type="submit" class="btn">
+            <span class="en lang" data-lang="en">Send Message</span>
+            <span class="ar lang" data-lang="ar">إرسال الرسالة</span>
+            <i class="fas fa-paper-plane"></i>
           </button>
         </form>
       </div>
@@ -207,30 +231,31 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <div class="footer-col">
-        <h4 class="en lang" data-lang="en">About</h4>
-        <h4 class="ar lang" data-lang="ar">عنا</h4>
-        <p class="en lang" data-lang="en">Certified safety solutions for homes and businesses since 2014.</p>
-        <p class="ar lang" data-lang="ar">حلول سلامة معتمدة منذ 2014.</p>
+        <h4 class="en lang" data-lang="en">Al-Intimaa Safety</h4>
+        <h4 class="ar lang" data-lang="ar">شركة الانتماء للسلامة</h4>
+        <p class="en lang" data-lang="en">Leading the way in fire safety and protection services across the region since 2014.</p>
+        <p class="ar lang" data-lang="ar">نحن نقود الطريق في خدمات السلامة والحماية من الحرائق في المنطقة منذ عام 2014.</p>
       </div>
       <div class="footer-col">
-        <h4 class="en lang" data-lang="en">Services</h4>
-        <h4 class="ar lang" data-lang="ar">الخدمات</h4>
+        <h4 class="en lang" data-lang="en">Quick Links</h4>
+        <h4 class="ar lang" data-lang="ar">روابط سريعة</h4>
         <ul>
-          <li><a href="#services"><span class="en lang" data-lang="en">Extinguishers</span><span class="ar lang" data-lang="ar">طفايات</span></a></li>
-          <li><a href="#services"><span class="en lang" data-lang="en">Alarms</span><span class="ar lang" data-lang="ar">أنظمة إنذار</span></a></li>
-          <li><a href="#services"><span class="en lang" data-lang="en">Maintenance</span><span class="ar lang" data-lang="ar">صيانة</span></a></li>
+          <li><a href="#services">Fire Extinguishers</a></li>
+          <li><a href="#services">Alarm Systems</a></li>
+          <li><a href="#services">Maintenance</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4 class="en lang" data-lang="en">Contact</h4>
-        <h4 class="ar lang" data-lang="ar">تواصل</h4>
-        <p><a href="tel:+123456789">+1 234 567 89</a></p>
-        <p><a href="mailto:info@example.com">info@example.com</a></p>
+        <h4 class="en lang" data-lang="en">Legal</h4>
+        <h4 class="ar lang" data-lang="ar">القانونية</h4>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <p class="en lang" data-lang="en">© 2024 Al-Intimaa Safety. All rights reserved.</p>
-      <p class="ar lang" data-lang="ar" dir="rtl">© 2024 شركة الانتماء للسلامة. جميع الحقوق محفوظة.</p>
+      <p>© 2024 Al-Intimaa Safety. All rights reserved.</p>
     </div>
   </footer>
 
