@@ -81,4 +81,14 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+  // Parallax Effect for Hero Background (optional, if you want a JS-based parallax)
+  // window.addEventListener('scroll', () => {
+  //   const hero = document.querySelector('.hero');
+  //   if (hero) {
+  //     const scrollPosition = window.scrollY;
+  //     hero.style.backgroundPositionY = -scrollPosition * 0.2 + 'px'; // Adjust speed
+  //   }
+  // });
+
 });
