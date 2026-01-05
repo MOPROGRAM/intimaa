@@ -13,7 +13,7 @@
       <nav class="main-nav">
         <div class="brand-row">
           <div class="logo-wrap">
-          <img src="assets/logo.png" alt="Al-Intimaa logo" class="logo-img" onerror="this.style.display='none'; document.getElementById('svg-logo').style.display='block'">
+          <img src="assets/logo.svg" alt="Al-Intimaa logo" class="logo-img" onerror="this.style.display='none'; document.getElementById('svg-logo').style.display='block'">
 
           <!-- Inline SVG fallback styled to match provided logo colors (red & green) -->
           <svg id="svg-logo" xmlns="http://www.w3.org/2000/svg" width="84" height="48" viewBox="0 0 84 48" style="display:none">
@@ -140,7 +140,7 @@
       </div>
     </section>
 
-    <section id="testimonials" class="testimonials container">
+    <section id="testimonials" class="testimonials container reveal">
       <h3 class="section-title en lang" data-lang="en">What clients say</h3>
       <h3 class="section-title ar lang" data-lang="ar" dir="rtl">آراء العملاء</h3>
       <div class="test-grid">
@@ -155,6 +155,16 @@
           <p class="ar lang" data-lang="ar" dir="rtl">"خدمة صيانة ممتازة. طفاياتنا دائماً جاهزة."</p>
           <cite>— Sara, Property Owner</cite>
         </blockquote>
+      </div>
+    </section>
+
+    <section class="cta-banner">
+      <div class="container cta-content reveal">
+        <h3 class="en lang" data-lang="en">Emergency Service Available 24/7</h3>
+        <h3 class="ar lang" data-lang="ar" dir="rtl">خدمة طوارئ متاحة 24/7</h3>
+        <p class="en lang" data-lang="en">Call us now for urgent fire safety issues</p>
+        <p class="ar lang" data-lang="ar" dir="rtl">اتصل بنا الآن في حالات الطوارئ</p>
+        <a href="tel:+123456789" class="btn">Call Now</a>
       </div>
     </section>
 
@@ -195,9 +205,32 @@
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-inner">
-      <p class="en lang" data-lang="en">© Al-Intimaa Safety. All rights reserved.</p>
-      <p class="ar lang" data-lang="ar" dir="rtl">© شركة الانتماء للسلامة. جميع الحقوق محفوظة.</p>
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h4 class="en lang" data-lang="en">About</h4>
+        <h4 class="ar lang" data-lang="ar">عنا</h4>
+        <p class="en lang" data-lang="en">Certified safety solutions for homes and businesses since 2014.</p>
+        <p class="ar lang" data-lang="ar">حلول سلامة معتمدة منذ 2014.</p>
+      </div>
+      <div class="footer-col">
+        <h4 class="en lang" data-lang="en">Services</h4>
+        <h4 class="ar lang" data-lang="ar">الخدمات</h4>
+        <ul>
+          <li><a href="#services"><span class="en lang" data-lang="en">Extinguishers</span><span class="ar lang" data-lang="ar">طفايات</span></a></li>
+          <li><a href="#services"><span class="en lang" data-lang="en">Alarms</span><span class="ar lang" data-lang="ar">أنظمة إنذار</span></a></li>
+          <li><a href="#services"><span class="en lang" data-lang="en">Maintenance</span><span class="ar lang" data-lang="ar">صيانة</span></a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="en lang" data-lang="en">Contact</h4>
+        <h4 class="ar lang" data-lang="ar">تواصل</h4>
+        <p><a href="tel:+123456789">+1 234 567 89</a></p>
+        <p><a href="mailto:info@example.com">info@example.com</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="en lang" data-lang="en">© 2024 Al-Intimaa Safety. All rights reserved.</p>
+      <p class="ar lang" data-lang="ar" dir="rtl">© 2024 شركة الانتماء للسلامة. جميع الحقوق محفوظة.</p>
     </div>
   </footer>
 

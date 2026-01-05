@@ -56,4 +56,15 @@ document.addEventListener('DOMContentLoaded', ()=>{
     });
   },{threshold:0.12});
   document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+
+  // Smooth scroll for nav links
+  document.querySelectorAll('a[href^="#"]').forEach(a=>{
+    a.addEventListener('click',(e)=>{
+      const href = a.getAttribute('href');
+      if(href !== '#' && document.querySelector(href)){
+        e.preventDefault();
+        document.querySelector(href).scrollIntoView({behavior:'smooth'});
+      }
+    });
+  });
 });
