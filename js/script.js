@@ -30,12 +30,16 @@ document.addEventListener('DOMContentLoaded', () => {
       body.setAttribute('dir', 'rtl');
       btnAr.setAttribute('aria-pressed', 'true');
       btnEn.setAttribute('aria-pressed', 'false');
+      document.querySelectorAll('.lang[data-lang="en"]').forEach(el => el.style.display = 'none');
+      document.querySelectorAll('.lang[data-lang="ar"]').forEach(el => el.style.display = 'block');
     } else {
       body.classList.remove('lang-ar');
       body.classList.add('lang-en');
       body.setAttribute('dir', 'ltr');
       btnEn.setAttribute('aria-pressed', 'true');
       btnAr.setAttribute('aria-pressed', 'false');
+      document.querySelectorAll('.lang[data-lang="ar"]').forEach(el => el.style.display = 'none');
+      document.querySelectorAll('.lang[data-lang="en"]').forEach(el => el.style.display = 'block');
     }
     localStorage.setItem('preferred-lang', lang);
   };
@@ -54,6 +58,9 @@ document.addEventListener('DOMContentLoaded', () => {
       const isVisible = rect.top < window.innerHeight - 100;
       if (isVisible) {
         el.classList.add('in-view');
+      } else {
+        // Optionally remove in-view when out of view to re-trigger on scroll up
+        // el.classList.remove('in-view'); 
       }
     });
   };
